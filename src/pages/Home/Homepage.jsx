@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const Homepage = () => {
+import MainLayout from "../../components/MainLayout";
+import Articles from "./container/Articles";
+import CTA from "./container/CTA";
+import Hero from "./container/Hero";
+
+const HomePage = () => {
     return (
-        <div>
-            <h1>Welcome to My Blog</h1>
-            <p>This is the homepage of my blog project.</p>
-        </div>
+        <MainLayout>
+            <Hero />
+            <Articles />
+            <CTA />
+        </MainLayout>
     );
 };
 
-export default Homepage;
+export default HomePage;
